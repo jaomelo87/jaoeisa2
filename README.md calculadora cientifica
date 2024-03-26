@@ -1,0 +1,52 @@
+# jaoeisa2
+import math
+
+def power(y, x):
+    """
+    y elevado à potência de x
+    """
+    return y ** x
+
+def sqrt(n):
+    """
+    Raiz quadrada de n
+    """
+    return math.sqrt(n)
+
+def exponentiation(y, x):
+    """
+    Exponenciação de y per x
+    """
+    return y ** x
+
+def trigonometry(operation, angle):
+    """
+    Seno, Cosseno, Tangente de um ângulo
+    """
+    if operation == 'sin':
+        return math.sin(math.radians(angle))
+    elif operation == 'cos':
+        return math.cos(math.radians(angle))
+    elif operation == 'tan':
+        return math.tan(math.radians(angle))
+
+def negative(n):
+    """
+    Indica número negativo
+    """
+    return -n
+
+def pi():
+    """
+    Retorna o valor de Pi
+    """
+    return math.pi
+
+def mode(value, mode='degrees'):
+    """
+    Alterna entre graus e radianos
+    """
+    if mode == 'degrees':
+        return math.radians(value)
+    else:
+        return value
